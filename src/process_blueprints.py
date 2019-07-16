@@ -82,12 +82,12 @@ def main():
     flat_traverse('', d2, r2)
 
     left = {}
-    left['name'] = get_name(r1) if get_name(r1) else os.path.basename(i1).split('.')[0]
+    left['name'] = get_name(r1) if get_name(r1) else os.path.basename(options.left).split('.')[0]
     left['realm'] = get_realm(r1)
     left['config'] = r1
 
     right = {}
-    right['name'] = get_name(r2) if get_name(r2) else os.path.basename(i2).split('.')[0]
+    right['name'] = get_name(r2) if get_name(r2) else os.path.basename(options.right).split('.')[0]
     right['realm'] = get_realm(r2)
     right['config'] = r2
 
